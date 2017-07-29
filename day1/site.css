@@ -11,6 +11,7 @@ html,body{
 }
 
 nav{
+  position: relative;
   background: #fff;
   color: #000;
   height: 108px;
@@ -43,16 +44,20 @@ nav > ul > li > a{
   color: #524261;
   font-size: 1rem;
   text-align: center;
+  transition: color 0.4s ease;
+}
+
+nav > ul > li > a:hover{
+  color: rgba(0,0,0,.5);
+  transition: color 0.4s ease;
 }
 
 nav > ul > li:first-child > a{
   padding-left: 0;
 }
-
 nav > ul > li:last-child > a{
   padding-right: 0;
 }
-
 nav > ul > li:nth-child(2){
   width: 161px;
 }
@@ -66,9 +71,25 @@ nav > ul > li:nth-child(5){
   width: 140px;
 }
 
+nav .active{
+  color: rgba(0,0,0,.5);
+}
+
 .rsvp{
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
   border: 2px solid rgba(123,99,146,1);
   color: #524261;
+  font-size: .875rem;
+  font-weight: lighter;
+  text-align: center;
+  width: 140px;
+  background: #fff;
+  height: 46px;
+  line-height: 46px;
+  font-family: arial, helvetica, sans-serif;
 }
 
 .rsvp:hover{
