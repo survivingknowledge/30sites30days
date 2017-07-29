@@ -43,7 +43,7 @@ nav > ul > li > a{
   text-decoration: none;
   color: #524261;
   font-size: 1rem;
-  text-align: center;
+  text-align: left;
   transition: color 0.4s ease;
 }
 
@@ -96,11 +96,56 @@ nav .active{
   background: rgba(0,0,0,.1);
 }
 
-footer{
+
+.main{
+  position: relative;
+  background-image: url('img/couple2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: -50%;
+  margin-right: -50%;
+  height: 81.5vh;
+}
+
+.overlay{
   position: absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background: rgba(176,209,255,.5);
+}
+
+.greeting{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+
+}
+
+.greeting > h1{
+  margin: 0;
+}
+
+.greeting > h1 > span{
+  letter-spacing: 0.1em;
+  font-family: 'Dancing Script', cursive;
+}
+
+.engaged{
+  font-size:80px;
+}
+
+
+
+footer{
+  position: relative;
   height: 61px;
-  left: 0;
-  right: 0;
+  margin-left: -50%;
+  margin-right: -50%;
   background-color: rgba(46, 46, 46, 1);
   color: #fff;
   line-height: 61px;
